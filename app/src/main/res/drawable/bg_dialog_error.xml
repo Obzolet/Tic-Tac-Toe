@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rojo translúcido que cubre el diálogo cuando el código es erróneo (0.5 s). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/error_tint" />
+    <corners android:radius="16dp" />
+</shape>

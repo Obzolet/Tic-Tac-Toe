@@ -1,0 +1,36 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "rooms": {
+      "$code": {
+        ".read": "auth != null && $code.matches(/^[0-9]{4}$/)",
+        ".write": "auth != null && $code.matches(/^[0-9]{4}$/) && ((!data.exists() && newData.child('players/X').val() === auth.uid) || (data.exists() && !newData.exists() && data.child('players/X').val() === auth.uid) || (data.exists() && !data.child('players/O').exists() && data.child('status').val() === 'waiting' && newData.child('players/O').val() === auth.uid) || (data.child('players/X').val() === auth.uid && (data.child('turn').val() === 'X' || data.child('status').val() === 'finished' || newData.child('board').val() === data.child('board').val())) || (data.child('players/O').val() === auth.uid && (data.child('turn').val() === 'O' || data.child('status').val() === 'finished' || newData.child('board').val() === data.child('board').val())) || (data.exists() && data.child('createdAt').val() < now - 21600000 && newData.child('players/X').val() === auth.uid))",
+        ".validate": "!newData.exists() || newData.hasChildren(['schemaVersion', 'createdAt', 'players', 'status', 'board', 'turn', 'round'])",
+        "schemaVersion": { ".validate": "newData.isNumber()" },
+        "createdAt": { ".validate": "newData.isNumber()" },
+        "players": {
+          "X": { ".validate": "newData.isString()" },
+          "O": { ".validate": "newData.isString()" },
+          "$other": { ".validate": false }
+        },
+        "presence": {
+          "X": { ".validate": "newData.isBoolean()" },
+          "O": { ".validate": "newData.isBoolean()" },
+          "$other": { ".validate": false }
+        },
+        "status": { ".validate": "newData.val() === 'waiting' || newData.val() === 'playing' || newData.val() === 'finished'" },
+        "board": { ".validate": "newData.isString() && newData.val().matches(/^[0-2]{9}$/)" },
+        "turn": { ".validate": "newData.val() === 'X' || newData.val() === 'O'" },
+        "winner": { ".validate": "newData.val() === 'X' || newData.val() === 'O' || newData.val() === 'draw'" },
+        "round": { ".validate": "newData.isNumber() && newData.val() >= 1" },
+        "score": {
+          "X": { ".validate": "newData.isNumber() && newData.val() >= 0" },
+          "O": { ".validate": "newData.isNumber() && newData.val() >= 0" },
+          "$other": { ".validate": false }
+        },
+        "$other": { ".validate": false }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta del modo oscuro: mismas funciones que en values/colors.xml -->
+    <color name="background">#FF131517</color>
+    <color name="surface_card">#FF212428</color>
+    <color name="surface">#FF2B2E32</color>
+    <color name="board_cell">#FF1E2124</color>
+    <color name="board_cell_pressed">#FF2A2E32</color>
+    <color name="outline">#FF3C4043</color>
+    <color name="text_primary">#FFE8EAED</color>
+    <color name="text_secondary">#FF9AA0A6</color>
+    <color name="mark_x">#FF5FCB92</color>
+    <color name="mark_o">#FFF28B82</color>
+    <color name="on_mark_x">#FF08281A</color>
+</resources>

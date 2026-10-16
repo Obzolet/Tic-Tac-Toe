@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modo claro: se muestra un SOL (toca para pasar a oscuro). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- disco central -->
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M24,24m-6,0a6,6 0,1 0,12 0a6,6 0,1 0,-12 0Z" />
+    <!-- ocho rayos -->
+    <path
+        android:strokeColor="@color/text_primary"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M24,10.5L24,13.5M24,34.5L24,37.5M10.5,24L13.5,24M34.5,24L37.5,24M14.45,14.45L16.57,16.57M31.43,31.43L33.55,33.55M14.45,33.55L16.57,31.43M31.43,16.57L33.55,14.45" />
+</vector>

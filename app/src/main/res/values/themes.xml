@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Claro u oscuro según la elección del usuario (botón sol/luna) o, por defecto, el sistema. -->
+    <style name="Theme.TicTacToe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/mark_x</item>
+        <item name="colorPrimaryVariant">@color/mark_x_dark</item>
+        <item name="colorOnPrimary">@color/on_mark_x</item>
+        <item name="colorSecondary">@color/mark_x</item>
+        <item name="colorSecondaryVariant">@color/mark_x_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/background</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.TicTacToe.Dialog</item>
+    </style>
+
+    <!-- Diálogos: esquinas de 16dp, título 22sp, mensaje 16sp, botones de texto verdes de 14sp. -->
+    <style name="ThemeOverlay.TicTacToe.Dialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.TicTacToe.Dialog</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/TicTacToe.DialogTitle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/TicTacToe.DialogBody</item>
+        <item name="buttonBarPositiveButtonStyle">@style/TicTacToe.DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/TicTacToe.DialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/TicTacToe.DialogButton</item>
+    </style>
+
+    <style name="ShapeAppearance.TicTacToe.Dialog" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="TicTacToe.DialogTitle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TicTacToe.DialogBody" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TicTacToe.DialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/mark_x</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

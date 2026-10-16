@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+
+    <string name="game_title">Tic-tac-toe</string>
+    <string name="game_subtitle">You vs. computer</string>
+    <string name="more_options">More options</string>
+    <string name="theme_toggle_description">Switch to dark mode</string>
+
+    <string name="mark_x">X</string>
+    <string name="mark_o">O</string>
+    <string name="player_you">You</string>
+    <string name="player_computer">Computer</string>
+
+    <string name="squares_filled">%1$d of 9 squares filled</string>
+
+    <string name="status_your_turn">Your turn</string>
+    <string name="status_your_turn_detail">Tap an empty square to place your %1$s.</string>
+    <string name="status_computer_turn">Computer’s turn</string>
+    <string name="status_computer_turn_detail">The computer is choosing a square.</string>
+    <string name="status_you_win">Game over — you win!</string>
+    <string name="status_computer_wins">Game over — computer wins.</string>
+    <string name="status_tie">Game over — it’s a tie.</string>
+    <string name="status_tie_detail">All nine squares are filled.</string>
+    <string name="score_wins_losses">Wins %1$d · Losses %2$d</string>
+    <string name="status_three_row">Three %1$ss in a row.</string>
+    <string name="status_three_column">Three %1$ss in a column.</string>
+    <string name="status_three_diagonal">Three %1$ss in a diagonal row.</string>
+
+    <string name="menu_new_game">New Game</string>
+    <string name="play_again">Play again</string>
+    <string name="menu_difficulty">Difficulty</string>
+    <string name="menu_quit">Quit</string>
+
+    <string name="dialog_new_game_title">Start a new game?</string>
+    <string name="dialog_new_game_message">Your current game and the score will be reset. Start again from zero?</string>
+    <string name="dialog_quit_title">Quit the game?</string>
+    <string name="dialog_quit_message">Your current game will be lost. Are you sure you want to quit?</string>
+
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_harder">Harder</string>
+    <string name="difficulty_expert">Expert</string>
+
+    <string name="menu_online">Online</string>
+    <string name="menu_leave_online">Leave online game</string>
+    <string name="player_opponent">Opponent</string>
+
+    <string name="online_title">Play online</string>
+    <string name="online_subtitle">Play against a friend who has their own copy of the game.</string>
+    <string name="online_create">Create room</string>
+    <string name="online_join">Join room</string>
+    <string name="online_join_action">Join</string>
+    <string name="online_share_code">Share this code with your opponent</string>
+    <string name="online_waiting">Waiting for opponent…</string>
+    <string name="online_creating">Creating room…</string>
+    <string name="online_enter_code">Enter the 4-digit room code</string>
+    <string name="online_code_hint">Room code</string>
+    <string name="online_invalid_code">The code is not valid</string>
+    <string name="online_error_connection">Couldn’t connect. Check your connection and try again.</string>
+    <string name="online_not_available">Online play isn’t available: Firebase isn’t configured in this build.</string>
+    <string name="online_room_closed">The online game ended.</string>
+    <string name="online_connected">Connected! Good luck.</string>
+
+    <string name="dialog_leave_online_title">Leave the online game?</string>
+    <string name="dialog_leave_online_message">The room will close for your opponent and you will go back to your game against the computer.</string>
+    <string name="leave">Leave</string>
+
+    <string name="status_opponent_turn">Opponent’s turn</string>
+    <string name="status_opponent_turn_detail">Waiting for your opponent to choose a square.</string>
+    <string name="status_opponent_wins">Game over — opponent wins.</string>
+    <string name="status_opponent_offline">Opponent disconnected</string>
+    <string name="status_opponent_offline_detail">Waiting for them to come back.</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="status_connecting_detail">Joining your online game.</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BoardView">
+        <!-- Relación ancho/alto del tablero (retrato 364:360, horizontal 1:1). -->
+        <attr name="boardAspect" format="float" />
+        <!-- Alto del símbolo X/O como fracción del alto de la casilla. -->
+        <attr name="markScale" format="float" />
+        <!-- Separación entre el tablero y el texto "n of 9 squares filled". -->
+        <attr name="countSpacing" format="dimension" />
+    </declare-styleable>
+</resources>
